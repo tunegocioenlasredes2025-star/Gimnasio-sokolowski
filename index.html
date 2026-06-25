@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============ SEO ============ -->
+<title>Gimnasio Sokolowski | Musculación y entrenamiento en Haedo</title>
+<meta name="description" content="Gimnasio Sokolowski en Haedo: musculación, entrenamiento personalizado, preparación física y una comunidad que te impulsa a progresar. Sumate y entrená en serio." />
+<meta name="keywords" content="gimnasio Haedo, musculación Haedo, entrenamiento personalizado, gimnasio zona oeste, preparación física, pesas Haedo, Gimnasio Sokolowski" />
+<meta name="author" content="Gimnasio Sokolowski" />
+<meta name="theme-color" content="#982729" />
+<link rel="canonical" href="https://gimnasiosokolowski.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Gimnasio Sokolowski | Entrená para progresar" />
+<meta property="og:description" content="Musculación, entrenamiento personalizado y comunidad real en Haedo. Resultados que empiezan con constancia." />
+<meta property="og:image" content="foto%20gimnasio%201.png" />
+<meta property="og:locale" content="es_AR" />
+<meta property="og:site_name" content="Gimnasio Sokolowski" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Gimnasio Sokolowski | Entrená para progresar" />
+<meta name="twitter:description" content="Musculación, entrenamiento personalizado y comunidad real en Haedo." />
+<meta name="twitter:image" content="foto%20gimnasio%201.png" />
+
+<link rel="icon" type="image/png" href="logo.png" />
+<link rel="apple-touch-icon" href="logo.png" />
+
+<!-- Fonts: Plus Jakarta Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+
+<!-- Schema.org Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "Gimnasio Sokolowski",
+  "image": "foto%20gimnasio%201.png",
+  "logo": "logo.png",
+  "description": "Gimnasio de musculación y entrenamiento en Haedo. Musculación, entrenamiento personalizado, preparación física y comunidad.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Perito Moreno 51, 1° piso",
+    "addressLocality": "Haedo",
+    "postalCode": "B1706",
+    "addressRegion": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "telephone": "+541157582523",
+  "url": "https://gimnasiosokolowski.com/",
+  "sameAs": ["https://www.instagram.com/gimnasio.sokolowski/"],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:00",
+      "closes": "18:00"
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bordo:#982729;
+  --bordo-dark:#771e20;
+  --bordo-soft:#b2484a;
+  --beige:#d7d1c3;
+  --beige-soft:#e7e3da;
+  --light:#fefdfd;
+  --ink:#1c1718;
+  --ink-soft:#5a5350;
+  --line:rgba(28,23,24,.10);
+  --shadow-sm:0 2px 10px rgba(28,23,24,.06);
+  --shadow-md:0 14px 40px rgba(28,23,24,.10);
+  --shadow-lg:0 30px 70px rgba(28,23,24,.16);
+  --radius:18px;
+  --radius-lg:26px;
+  --maxw:1180px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Plus Jakarta Sans',system-ui,sans-serif;
+  background:var(--light);
+  color:var(--ink);
+  line-height:1.65;
+  overflow-x:hidden;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+section{position:relative}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+h1,h2,h3{line-height:1.08;letter-spacing:-.02em;font-weight:800}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--bordo);
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--bordo);border-radius:2px}
+
+.section-pad{padding:clamp(70px,10vw,128px) 0}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-weight:700;font-size:1rem;letter-spacing:-.01em;
+  padding:16px 30px;border-radius:100px;cursor:pointer;border:none;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .3s;
+  white-space:nowrap;
+}
+.btn svg{width:19px;height:19px}
+.btn-primary{background:var(--bordo);color:#fff;box-shadow:0 12px 30px rgba(152,39,41,.32)}
+.btn-primary:hover{background:var(--bordo-dark);transform:translateY(-3px);box-shadow:0 18px 40px rgba(152,39,41,.42)}
+.btn-ghost{background:rgba(255,255,255,.10);color:#fff;border:1.5px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:#fff;color:var(--bordo);transform:translateY(-3px)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000;transform:translateY(-3px)}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.10s}
+.reveal.d2{transition-delay:.20s}
+.reveal.d3{transition-delay:.30s}
+.reveal.d4{transition-delay:.40s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ============ HEADER ============ */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  transition:background .4s,box-shadow .4s,padding .4s;
+  padding:18px 0;
+}
+header.scrolled{background:rgba(254,253,253,.92);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line),0 8px 30px rgba(28,23,24,.06);padding:11px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.02em;color:#fff;transition:color .4s}
+header.scrolled .brand{color:var(--ink)}
+.brand img{width:44px;height:44px;border-radius:11px;object-fit:cover;box-shadow:var(--shadow-sm)}
+.brand span{font-size:1.02rem;line-height:1.1}
+.brand span small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links a{font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92);transition:color .3s;position:relative}
+header.scrolled .nav-links a{color:var(--ink-soft)}
+.nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:2px;background:var(--bordo);transition:width .3s var(--ease)}
+.nav-links a:not(.btn):hover::after{width:100%}
+.nav-links a:not(.btn):hover{color:var(--bordo)}
+header.scrolled .nav-links .btn{color:#fff}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;z-index:70}
+.burger span{width:26px;height:2.5px;background:#fff;border-radius:3px;transition:.35s var(--ease)}
+header.scrolled .burger span{background:var(--ink)}
+.burger.open span{background:var(--ink)}
+.burger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+.mobile-menu{
+  position:fixed;inset:0;background:var(--light);z-index:65;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;
+  transform:translateX(100%);transition:transform .5s var(--ease);
+}
+.mobile-menu.open{transform:none}
+.mobile-menu a{font-size:1.5rem;font-weight:700;color:var(--ink);padding:12px}
+.mobile-menu a.btn{font-size:1.05rem;margin-top:16px}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:100vh;min-height:100svh;display:flex;align-items:center;
+  position:relative;overflow:hidden;
+  background:linear-gradient(180deg,rgba(28,18,19,.55) 0%,rgba(119,30,32,.62) 55%,rgba(60,15,16,.86) 100%),
+             url("foto%20gimnasio%201.png");
+  background-size:cover;background-position:center;
+}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 110%,rgba(20,12,12,.7),transparent 60%)}
+.hero-inner{position:relative;z-index:2;padding:140px 0 90px;max-width:820px}
+.hero .eyebrow{color:#fff}
+.hero .eyebrow::before{background:#fff}
+.hero h1{
+  color:#fff;font-size:clamp(2.6rem,7vw,5rem);margin:22px 0 0;font-weight:800;
+  text-shadow:0 4px 30px rgba(0,0,0,.35);
+}
+.hero h1 em{font-style:normal;color:var(--beige)}
+.hero p{color:rgba(255,255,255,.92);font-size:clamp(1.05rem,2.4vw,1.3rem);margin-top:22px;max-width:560px;font-weight:400}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:34px;margin-top:56px}
+.hero-stats div{color:#fff}
+.hero-stats b{display:block;font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;line-height:1}
+.hero-stats small{font-size:.82rem;letter-spacing:.04em;color:rgba(255,255,255,.78);font-weight:500}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.7);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint .mouse{width:24px;height:38px;border:2px solid rgba(255,255,255,.55);border-radius:14px;position:relative}
+.scroll-hint .mouse::before{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:4px;height:7px;background:#fff;border-radius:3px;animation:scrolldot 1.6s infinite}
+@keyframes scrolldot{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}80%{opacity:0;transform:translate(-50%,12px)}}
+
+/* ============ MARQUEE STRIP ============ */
+.strip{background:var(--bordo);color:#fff;overflow:hidden;padding:18px 0}
+.marquee{display:flex;gap:48px;white-space:nowrap;width:max-content;animation:marq 28s linear infinite}
+.marquee span{font-weight:700;letter-spacing:.04em;font-size:1.05rem;display:inline-flex;align-items:center;gap:48px;opacity:.95}
+.marquee span::after{content:"●";font-size:.6rem;opacity:.6}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(34px,5vw,72px);align-items:center}
+.about-copy h2{font-size:clamp(2rem,4.4vw,3.1rem);margin:18px 0 20px}
+.about-copy p{color:var(--ink-soft);font-size:1.06rem;margin-bottom:16px}
+.about-copy p strong{color:var(--ink);font-weight:700}
+.about-points{display:grid;gap:14px;margin-top:26px}
+.about-points li{list-style:none;display:flex;gap:13px;align-items:flex-start;font-weight:500}
+.about-points .tick{flex:none;width:26px;height:26px;border-radius:8px;background:rgba(152,39,41,.10);color:var(--bordo);display:grid;place-items:center;margin-top:2px}
+.about-points .tick svg{width:15px;height:15px}
+.about-media{position:relative}
+.about-media img{width:100%;border-radius:var(--radius-lg);object-fit:cover;aspect-ratio:4/5;box-shadow:var(--shadow-lg)}
+.about-badge{
+  position:absolute;left:-18px;bottom:-18px;background:var(--bordo);color:#fff;
+  padding:22px 26px;border-radius:var(--radius);box-shadow:var(--shadow-md);max-width:210px;
+}
+.about-badge b{font-size:2rem;display:block;line-height:1;font-weight:800}
+.about-badge small{font-size:.85rem;opacity:.9;font-weight:500}
+
+/* ============ SERVICES ============ */
+.sec-head{max-width:640px;margin:0 auto clamp(44px,6vw,64px);text-align:center}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3.2rem);margin:16px 0 16px}
+.sec-head p{color:var(--ink-soft);font-size:1.08rem}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:34px 30px;
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s;position:relative;overflow:hidden;
+}
+.svc::before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--bordo);transition:width .5s var(--ease)}
+.svc:hover{transform:translateY(-8px);box-shadow:var(--shadow-md);border-color:transparent}
+.svc:hover::before{width:100%}
+.svc-ic{width:56px;height:56px;border-radius:15px;background:linear-gradient(135deg,var(--bordo),var(--bordo-soft));display:grid;place-items:center;margin-bottom:22px;box-shadow:0 10px 24px rgba(152,39,41,.26)}
+.svc-ic svg{width:27px;height:27px;color:#fff}
+.svc h3{font-size:1.28rem;margin-bottom:10px}
+.svc p{color:var(--ink-soft);font-size:.98rem}
+
+/* ============ GALLERY ============ */
+.gallery-sec{background:var(--beige-soft)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:16px}
+.gitem{overflow:hidden;border-radius:var(--radius);cursor:pointer;position:relative;box-shadow:var(--shadow-sm)}
+.gitem img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.gitem::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(119,30,32,.55),transparent 55%);opacity:0;transition:opacity .4s}
+.gitem .zoom{position:absolute;right:14px;bottom:14px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;opacity:0;transform:scale(.7);transition:.4s var(--ease);z-index:2}
+.gitem .zoom svg{width:18px;height:18px;color:var(--bordo)}
+.gitem:hover img{transform:scale(1.08)}
+.gitem:hover::after{opacity:1}
+.gitem:hover .zoom{opacity:1;transform:scale(1)}
+.g-big{grid-column:span 2;grid-row:span 2}
+.g-wide{grid-column:span 2}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(20,12,12,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(8px)}
+.lightbox.open{display:flex;animation:fade .3s}
+@keyframes fade{from{opacity:0}}
+.lightbox img{max-width:92vw;max-height:86vh;border-radius:14px;box-shadow:var(--shadow-lg)}
+.lb-close,.lb-nav{position:absolute;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;width:50px;height:50px;border-radius:50%;cursor:pointer;display:grid;place-items:center;transition:.3s}
+.lb-close:hover,.lb-nav:hover{background:#fff;color:var(--bordo)}
+.lb-close{top:24px;right:24px}
+.lb-nav svg,.lb-close svg{width:22px;height:22px}
+.lb-prev{left:24px;top:50%;transform:translateY(-50%)}
+.lb-next{right:24px;top:50%;transform:translateY(-50%)}
+
+/* ============ BENEFITS ============ */
+.benefits-sec{background:var(--ink);color:#fff;overflow:hidden;position:relative}
+.benefits-sec::before{content:"";position:absolute;top:-120px;right:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(152,39,41,.5),transparent 70%)}
+.benefits-sec .sec-head h2{color:#fff}
+.benefits-sec .sec-head p{color:rgba(255,255,255,.7)}
+.benefits-sec .eyebrow{color:var(--beige)}
+.benefits-sec .eyebrow::before{background:var(--beige)}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative;z-index:2}
+.benefit{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:var(--radius);padding:30px 26px;transition:transform .4s var(--ease),background .4s}
+.benefit:hover{transform:translateY(-6px);background:rgba(255,255,255,.07)}
+.benefit .b-ic{width:50px;height:50px;border-radius:13px;background:rgba(152,39,41,.22);color:var(--beige);display:grid;place-items:center;margin-bottom:18px}
+.benefit .b-ic svg{width:25px;height:25px}
+.benefit h3{font-size:1.18rem;margin-bottom:8px}
+.benefit p{color:rgba(255,255,255,.66);font-size:.95rem}
+
+/* ============ TESTIMONIALS ============ */
+.testi{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:32px 30px;position:relative;transition:transform .4s var(--ease),box-shadow .4s}
+.tcard:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.tcard .quote{font-size:3.4rem;line-height:.6;color:var(--beige);font-weight:800;font-family:Georgia,serif}
+.tstars{display:flex;gap:3px;color:var(--bordo);margin:6px 0 14px}
+.tstars svg{width:17px;height:17px}
+.tcard p{color:var(--ink-soft);font-size:1rem;font-style:italic;min-height:96px}
+.tperson{display:flex;align-items:center;gap:13px;margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
+.tperson .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--bordo),var(--bordo-soft));color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.1rem}
+.tperson b{display:block;font-weight:700;font-size:.98rem}
+.tperson small{color:var(--ink-soft);font-size:.84rem}
+.testi-note{text-align:center;margin-top:34px;color:var(--ink-soft);font-size:.9rem}
+
+/* ============ CTA ============ */
+.cta-sec{
+  background:linear-gradient(135deg,var(--bordo) 0%,var(--bordo-dark) 100%);color:#fff;text-align:center;overflow:hidden;
+}
+.cta-sec::before,.cta-sec::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.05)}
+.cta-sec::before{width:340px;height:340px;top:-140px;left:-90px}
+.cta-sec::after{width:280px;height:280px;bottom:-130px;right:-70px}
+.cta-inner{position:relative;z-index:2;max-width:760px;margin:0 auto}
+.cta-inner h2{font-size:clamp(2rem,5vw,3.4rem);margin-bottom:20px}
+.cta-inner p{font-size:1.15rem;color:rgba(255,255,255,.86);margin-bottom:36px}
+.cta-inner .btn-ghost{border-color:#fff}
+
+/* ============ MAP + INFO ============ */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,4vw,54px);align-items:stretch}
+.info-card h2{font-size:clamp(1.9rem,4vw,2.7rem);margin:16px 0 18px}
+.info-card>p{color:var(--ink-soft);margin-bottom:30px;font-size:1.05rem}
+.info-list{display:grid;gap:18px}
+.info-row{display:flex;gap:16px;align-items:flex-start}
+.info-row .ic{flex:none;width:48px;height:48px;border-radius:13px;background:rgba(152,39,41,.10);color:var(--bordo);display:grid;place-items:center}
+.info-row .ic svg{width:22px;height:22px}
+.info-row b{display:block;font-weight:700;margin-bottom:2px}
+.info-row span,.info-row a{color:var(--ink-soft);font-size:.98rem}
+.info-row a:hover{color:var(--bordo)}
+.map-frame{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);min-height:420px;border:1px solid var(--line)}
+.map-frame iframe{width:100%;height:100%;min-height:420px;border:0;display:block;filter:saturate(.95)}
+
+/* ============ FAQ ============ */
+.faq-sec{background:var(--beige-soft)}
+.faq{max-width:780px;margin:0 auto;display:grid;gap:14px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:box-shadow .3s}
+.faq-item.open{box-shadow:var(--shadow-md)}
+.faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 26px;display:flex;justify-content:space-between;align-items:center;gap:18px;font-family:inherit;font-size:1.08rem;font-weight:700;color:var(--ink)}
+.faq-q .pm{flex:none;width:30px;height:30px;border-radius:50%;background:rgba(152,39,41,.10);color:var(--bordo);display:grid;place-items:center;transition:transform .4s var(--ease),background .3s}
+.faq-q .pm svg{width:16px;height:16px}
+.faq-item.open .pm{transform:rotate(45deg);background:var(--bordo);color:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
+.faq-a p{padding:0 26px 24px;color:var(--ink-soft)}
+
+/* ============ FOOTER ============ */
+footer{background:var(--ink);color:rgba(255,255,255,.66);padding:72px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:46px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-brand{display:flex;align-items:center;gap:13px;margin-bottom:18px}
+.foot-brand img{width:52px;height:52px;border-radius:12px}
+.foot-brand b{color:#fff;font-size:1.15rem;font-weight:800;letter-spacing:-.02em}
+.foot-col p{font-size:.95rem;max-width:300px}
+.foot-col h4{color:#fff;font-size:.95rem;letter-spacing:.04em;margin-bottom:18px;text-transform:uppercase}
+.foot-col ul{list-style:none;display:grid;gap:11px}
+.foot-col a{color:rgba(255,255,255,.66);font-size:.95rem;transition:color .3s}
+.foot-col a:hover{color:var(--beige)}
+.foot-social{display:flex;gap:12px;margin-top:18px}
+.foot-social a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);display:grid;place-items:center;transition:.3s}
+.foot-social a:hover{background:var(--bordo);transform:translateY(-3px)}
+.foot-social svg{width:20px;height:20px;color:#fff}
+.foot-bottom{padding-top:26px;text-align:center;font-size:.85rem;color:rgba(255,255,255,.45)}
+.foot-bottom a{color:rgba(255,255,255,.6)}
+
+/* ============ FLOATING WHATSAPP ============ */
+.wa-float{
+  position:fixed;right:22px;bottom:22px;z-index:80;width:62px;height:62px;border-radius:50%;
+  background:#25D366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.45);
+  transition:transform .35s var(--ease);animation:wapulse 2.6s infinite;
+}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:33px;height:33px;color:#fff}
+@keyframes wapulse{0%{box-shadow:0 10px 30px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 10px 30px rgba(37,211,102,.45),0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 10px 30px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,0)}}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:980px){
+  .about-grid{grid-template-columns:1fr;gap:46px}
+  .about-media{max-width:440px;margin:0 auto}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .benefits{grid-template-columns:repeat(2,1fr)}
+  .testi{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+  .contact-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:34px}
+}
+@media (max-width:900px){
+  .nav-links{display:none}
+  .burger{display:flex}
+}
+@media (max-width:680px){
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .g-big{grid-column:span 2;grid-row:span 1}
+  .services{grid-template-columns:1fr}
+  .benefits{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-stats{gap:26px}
+  .lb-prev{left:10px}.lb-next{right:10px}
+  .btn{width:100%}
+  .hero-actions{width:100%}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#inicio" class="brand">
+      <img src="logo.png" alt="Logo Gimnasio Sokolowski" />
+      <span>Sokolowski<small>Gimnasio · Haedo</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#instalaciones">Instalaciones</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/5491157582523?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20gimnasio" target="_blank" rel="noopener" class="btn btn-primary" style="padding:11px 22px;font-size:.92rem">WhatsApp</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#nosotros">Nosotros</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#instalaciones">Instalaciones</a>
+  <a href="#beneficios">Beneficios</a>
+  <a href="#contacto">Contacto</a>
+  <a href="https://wa.me/5491157582523?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20gimnasio" target="_blank" rel="noopener" class="btn btn-primary">Escribir por WhatsApp</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-inner">
+    <span class="eyebrow reveal">Gimnasio en Haedo · Zona Oeste</span>
+    <h1 class="reveal d1">Entrená para <em>progresar.</em></h1>
+    <p class="reveal d2">Más que un gimnasio: un lugar para superarte. Musculación, entrenamiento de verdad y una comunidad que te empuja a ser constante.</p>
+    <div class="hero-actions reveal d3">
+      <a href="https://wa.me/5491157582523?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20gimnasio" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.597 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        Consultar por WhatsApp
+      </a>
+      <a href="#instalaciones" class="btn btn-ghost">Ver instalaciones</a>
+    </div>
+    <div class="hero-stats reveal d4">
+      <div><b>+15</b><small>años entrenando la zona</small></div>
+      <div><b>2 pisos</b><small>de equipamiento</small></div>
+      <div><b>100%</b><small>comunidad y constancia</small></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span class="mouse"></span>Scroll</div>
+</section>
+
+<!-- ============ STRIP ============ -->
+<div class="strip" aria-hidden="true">
+  <div class="marquee">
+    <span>MUSCULACIÓN</span><span>ENTRENAMIENTO PERSONALIZADO</span><span>PREPARACIÓN FÍSICA</span><span>PESAS LIBRES</span><span>COMUNIDAD</span><span>CONSTANCIA</span>
+    <span>MUSCULACIÓN</span><span>ENTRENAMIENTO PERSONALIZADO</span><span>PREPARACIÓN FÍSICA</span><span>PESAS LIBRES</span><span>COMUNIDAD</span><span>CONSTANCIA</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section-pad" id="nosotros">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <span class="eyebrow reveal">Sobre nosotros</span>
+      <h2 class="reveal d1">Un gimnasio con identidad de barrio y mentalidad de progreso.</h2>
+      <p class="reveal d1">En <strong>Gimnasio Sokolowski</strong> entrenás rodeado de gente que va en serio. No vendemos atajos: trabajamos la <strong>disciplina, la constancia y el acompañamiento</strong> para que cada persona avance a su ritmo, con buena técnica y con objetivos claros.</p>
+      <p class="reveal d2">Somos parte de Haedo desde hace años. Acá no sos un número: te conocen, te corrigen y te bancan los días que cuesta arrancar. Esa es la diferencia que se siente apenas entrás.</p>
+      <ul class="about-points">
+        <li class="reveal d2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><div><b>Disciplina</b> — rutinas con orden y progresión real.</div></li>
+        <li class="reveal d3"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><div><b>Comunidad</b> — un ambiente que motiva y suma.</div></li>
+        <li class="reveal d3"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><div><b>Acompañamiento</b> — siempre hay alguien para guiarte.</div></li>
+      </ul>
+    </div>
+    <div class="about-media reveal d2">
+      <img src="foto%20gimnasio%202.png" alt="Sector de pesas libres del Gimnasio Sokolowski" />
+      <div class="about-badge"><b>Haedo</b><small>Zona Oeste — Buenos Aires</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section-pad" id="servicios" style="background:var(--beige-soft)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">Servicios</span>
+      <h2 class="reveal d1">Todo lo que necesitás para entrenar en serio</h2>
+      <p class="reveal d2">Equipamiento completo y entrenamiento pensado para cada objetivo, desde el primer día hasta tu mejor versión.</p>
+    </div>
+    <div class="services">
+      <div class="svc reveal d1">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6.5 6.5l11 11M3 9v6M21 9v6M6 5v14M18 5v14M2 12h4M18 12h4"/></svg></div>
+        <h3>Musculación</h3>
+        <p>Salón completo de máquinas y estaciones para trabajar todos los grupos musculares con buena técnica.</p>
+      </div>
+      <div class="svc reveal d2">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5M17 17a3 3 0 100-6 3 3 0 000 6zM7 13a3 3 0 100-6 3 3 0 000 6z"/></svg></div>
+        <h3>Entrenamiento personalizado</h3>
+        <p>Planes adaptados a tu nivel y a tu objetivo, con seguimiento para que cada sesión cuente.</p>
+      </div>
+      <div class="svc reveal d3">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>Preparación física</h3>
+        <p>Fuerza, resistencia y acondicionamiento general para mejorar tu rendimiento dentro y fuera del gimnasio.</p>
+      </div>
+      <div class="svc reveal d1">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5l11 11M5 8l-2 2 2 2M19 16l2-2-2-2M8 5l2-2 2 2M16 19l-2 2-2-2"/></svg></div>
+        <h3>Pesas libres</h3>
+        <p>Mancuernas, barras y kettlebells para entrenamientos de fuerza completos y funcionales.</p>
+      </div>
+      <div class="svc reveal d2">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-10a7 7 0 0114 0c0 5.65-7 10-7 10z"/><path d="M9 11l2 2 4-4"/></svg></div>
+        <h3>Cardio y funcional</h3>
+        <p>Equipos de cardio y espacio para trabajo funcional, ideales para sumar a tu rutina de fuerza.</p>
+      </div>
+      <div class="svc reveal d3">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>Asesoramiento</h3>
+        <p>Te guiamos para que arranques bien, corrijas la técnica y mantengas la constancia a lo largo del tiempo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section-pad gallery-sec" id="instalaciones">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">Instalaciones</span>
+      <h2 class="reveal d1">Conocé el lugar donde vas a entrenar</h2>
+      <p class="reveal d2">Espacios reales, equipamiento de verdad y el ambiente de comunidad que nos caracteriza. Tocá una imagen para verla en grande.</p>
+    </div>
+    <div class="gallery reveal d1">
+      <div class="gitem g-big" data-src="foto%20gimnasio%201.png">
+        <img src="foto%20gimnasio%201.png" alt="Salón principal de musculación del Gimnasio Sokolowski" loading="lazy" />
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+      </div>
+      <div class="gitem g-wide" data-src="foto%20gimnasio%203.png">
+        <img src="foto%20gimnasio%203.png" alt="Sector de cardio y máquinas del Gimnasio Sokolowski" loading="lazy" />
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+      </div>
+      <div class="gitem" data-src="foto%20gimnasio%202.png">
+        <img src="foto%20gimnasio%202.png" alt="Zona de pesas libres y mancuernas" loading="lazy" />
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+      </div>
+      <div class="gitem" data-src="logo.png" style="background:var(--bordo)">
+        <img src="logo.png" alt="Logo Gimnasio Sokolowski" loading="lazy" style="object-fit:contain;padding:18px" />
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section class="section-pad benefits-sec" id="beneficios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">Por qué Sokolowski</span>
+      <h2 class="reveal d1">Lo que vas a encontrar acá</h2>
+      <p class="reveal d2">Más que máquinas: un entorno pensado para que vuelvas, progreses y te quedes.</p>
+    </div>
+    <div class="benefits">
+      <div class="benefit reveal d1">
+        <div class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>Ambiente motivador</h3>
+        <p>Un clima de trabajo que te contagia las ganas de dar un poco más cada día.</p>
+      </div>
+      <div class="benefit reveal d2">
+        <div class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5l11 11M3 9v6M21 9v6M6 5v14M18 5v14M2 12h4M18 12h4"/></svg></div>
+        <h3>Equipamiento completo</h3>
+        <p>Máquinas, pesas libres y cardio para cubrir cualquier rutina y objetivo.</p>
+      </div>
+      <div class="benefit reveal d3">
+        <div class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <h3>Seguimiento</h3>
+        <p>Te ayudamos a corregir técnica y a sostener el progreso en el tiempo.</p>
+      </div>
+      <div class="benefit reveal d4">
+        <div class="b-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>Comunidad real</h3>
+        <p>Gente que entrena en serio y te hace sentir parte desde el primer día.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section-pad" id="testimonios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">Testimonios</span>
+      <h2 class="reveal d1">Lo que dicen quienes entrenan acá</h2>
+      <p class="reveal d2">Historias reales de constancia y progreso dentro del gimnasio.</p>
+    </div>
+    <div class="testi">
+      <div class="tcard reveal d1">
+        <div class="quote">&ldquo;</div>
+        <div class="tstars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+        </div>
+        <p>Espacio reservado para un testimonio real de un alumno o alumna del gimnasio.</p>
+        <div class="tperson"><span class="av">S</span><div><b>Nombre del alumno</b><small>Cliente de Gimnasio Sokolowski</small></div></div>
+      </div>
+      <div class="tcard reveal d2">
+        <div class="quote">&ldquo;</div>
+        <div class="tstars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+        </div>
+        <p>Espacio reservado para un testimonio real de un alumno o alumna del gimnasio.</p>
+        <div class="tperson"><span class="av">K</span><div><b>Nombre del alumno</b><small>Cliente de Gimnasio Sokolowski</small></div></div>
+      </div>
+      <div class="tcard reveal d3">
+        <div class="quote">&ldquo;</div>
+        <div class="tstars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .5-5.3 4.6 1.7 6.9L12 17l-6.1 3.5 1.7-6.9L2.3 9l7-.5z"/></svg>
+        </div>
+        <p>Espacio reservado para un testimonio real de un alumno o alumna del gimnasio.</p>
+        <div class="tperson"><span class="av">M</span><div><b>Nombre del alumno</b><small>Cliente de Gimnasio Sokolowski</small></div></div>
+      </div>
+    </div>
+    <p class="testi-note reveal">Pedile a tus alumnos una reseña en Instagram o Google y reemplazá estos textos por testimonios reales.</p>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section-pad cta-sec">
+  <div class="wrap cta-inner">
+    <h2 class="reveal">El mejor momento para empezar fue ayer. El segundo mejor momento es hoy.</h2>
+    <p class="reveal d1">Sumate a Gimnasio Sokolowski y empezá a entrenar rodeado de gente que va por más. Escribinos y te contamos todo.</p>
+    <div class="hero-actions reveal d2" style="justify-content:center">
+      <a href="https://wa.me/5491157582523?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20gimnasio" target="_blank" rel="noopener" class="btn btn-ghost">Quiero más información</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT + MAP ============ -->
+<section class="section-pad" id="contacto">
+  <div class="wrap contact-grid">
+    <div class="info-card">
+      <span class="eyebrow reveal">Dónde estamos</span>
+      <h2 class="reveal d1">Vení a conocernos</h2>
+      <p class="reveal d1">Estamos en pleno Haedo, a pasos de todo. Acercate, recorré las instalaciones y arrancá hoy mismo.</p>
+      <div class="info-list">
+        <div class="info-row reveal d2">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>Dirección</b><a href="https://www.google.com/maps/search/?api=1&query=Perito+Moreno+51+Haedo+Buenos+Aires" target="_blank" rel="noopener">Perito Moreno 51, 1° piso — B1706 Haedo, Buenos Aires</a></div>
+        </div>
+        <div class="info-row reveal d2">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></span>
+          <div><b>Teléfono / WhatsApp</b><a href="https://wa.me/5491157582523" target="_blank" rel="noopener">011 5758-2523</a></div>
+        </div>
+        <div class="info-row reveal d3">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></span>
+          <div><b>Instagram</b><a href="https://www.instagram.com/gimnasio.sokolowski/" target="_blank" rel="noopener">@gimnasio.sokolowski</a></div>
+        </div>
+        <div class="info-row reveal d3">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><b>Horarios</b><span>Lun a Vie: 8:00 a 22:00 · Sáb: 10:00 a 18:00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="map-frame reveal d2">
+      <iframe
+        title="Ubicación Gimnasio Sokolowski"
+        src="https://www.google.com/maps?q=Perito%20Moreno%2051%2C%20Haedo%2C%20Buenos%20Aires&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section-pad faq-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow reveal">Preguntas frecuentes</span>
+      <h2 class="reveal d1">Antes de arrancar, esto te puede ayudar</h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item reveal d1">
+        <button class="faq-q">¿Necesito experiencia para empezar?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><p>Para nada. Recibimos desde personas que nunca pisaron un gimnasio hasta quienes entrenan hace años. Te guiamos para que arranques con buena técnica y a tu ritmo.</p></div>
+      </div>
+      <div class="faq-item reveal d1">
+        <button class="faq-q">¿Puedo hacer una clase de prueba?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><p>Sí. Escribinos por WhatsApp y coordinamos para que vengas a conocer el gimnasio y entrenar. Así ves el ambiente y las instalaciones antes de decidir.</p></div>
+      </div>
+      <div class="faq-item reveal d2">
+        <button class="faq-q">¿Qué horarios tienen?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><p>Abrimos de lunes a viernes de 8:00 a 22:00 y los sábados de 10:00 a 18:00. Si tenés una duda puntual sobre el día que querés venir, escribinos y te confirmamos.</p></div>
+      </div>
+      <div class="faq-item reveal d2">
+        <button class="faq-q">¿Cómo me inscribo?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><p>Es muy simple: escribinos por WhatsApp o pasá directamente por el gimnasio en Perito Moreno 51, Haedo. Te explicamos los planes y arrancás el mismo día.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-brand"><img src="logo.png" alt="Logo Gimnasio Sokolowski" /><b>Gimnasio Sokolowski</b></div>
+        <p>Musculación, entrenamiento y comunidad en Haedo. Entrená para progresar, con constancia y acompañamiento.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/gimnasio.sokolowski/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+          </a>
+          <a href="https://wa.me/5491157582523" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.597 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.907z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#instalaciones">Instalaciones</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Perito+Moreno+51+Haedo" target="_blank" rel="noopener">Perito Moreno 51, 1° piso<br>B1706 Haedo, Bs. As.</a></li>
+          <li><a href="https://wa.me/5491157582523" target="_blank" rel="noopener">011 5758-2523</a></li>
+          <li><a href="https://www.instagram.com/gimnasio.sokolowski/" target="_blank" rel="noopener">@gimnasio.sokolowski</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © <span id="year"></span> Gimnasio Sokolowski. Todos los derechos reservados. · Desarrollado por <a href="https://www.instagram.com/tunegocioenlasredes/" target="_blank" rel="noopener">Tu Negocio En Las Redes</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WA ============ -->
+<a href="https://wa.me/5491157582523?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20gimnasio" target="_blank" rel="noopener" class="wa-float" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.413c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.597 20.13c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.907zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <img id="lbImg" src="" alt="Instalaciones Gimnasio Sokolowski" />
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+</div>
+
+<script>
+// year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// header scroll
+const header = document.getElementById('header');
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+// mobile menu
+const burger = document.getElementById('burger');
+const menu = document.getElementById('mobileMenu');
+const toggleMenu = (state) => {
+  const open = state ?? !menu.classList.contains('open');
+  menu.classList.toggle('open', open);
+  burger.classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+};
+burger.addEventListener('click', () => toggleMenu());
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+
+// reveal on scroll
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:0.12, rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('.faq-item').forEach(item => {
+  const q = item.querySelector('.faq-q');
+  const a = item.querySelector('.faq-a');
+  q.addEventListener('click', () => {
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-a').style.maxHeight = null; });
+    if(!open){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+  });
+});
+
+// lightbox
+const gitems = [...document.querySelectorAll('.gitem')];
+const sources = gitems.map(g => g.dataset.src);
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+let idx = 0;
+const show = (i) => { idx = (i + sources.length) % sources.length; lbImg.src = sources[idx]; };
+const openLb = (i) => { show(i); lb.classList.add('open'); document.body.style.overflow='hidden'; };
+const closeLb = () => { lb.classList.remove('open'); document.body.style.overflow=''; };
+gitems.forEach((g,i) => g.addEventListener('click', () => openLb(i)));
+document.getElementById('lbClose').addEventListener('click', closeLb);
+document.getElementById('lbPrev').addEventListener('click', () => show(idx-1));
+document.getElementById('lbNext').addEventListener('click', () => show(idx+1));
+lb.addEventListener('click', (e) => { if(e.target === lb) closeLb(); });
+document.addEventListener('keydown', (e) => {
+  if(!lb.classList.contains('open')) return;
+  if(e.key === 'Escape') closeLb();
+  if(e.key === 'ArrowLeft') show(idx-1);
+  if(e.key === 'ArrowRight') show(idx+1);
+});
+</script>
+</body>
+</html>
