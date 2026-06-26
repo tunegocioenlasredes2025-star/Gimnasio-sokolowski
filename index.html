@@ -203,11 +203,6 @@ header.scrolled .burger span{background:var(--ink)}
 .hero-stats div{color:#fff}
 .hero-stats b{display:block;font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;line-height:1}
 .hero-stats small{font-size:.82rem;letter-spacing:.04em;color:rgba(255,255,255,.78);font-weight:500}
-.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.7);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px}
-.scroll-hint .mouse{width:24px;height:38px;border:2px solid rgba(255,255,255,.55);border-radius:14px;position:relative}
-.scroll-hint .mouse::before{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:4px;height:7px;background:#fff;border-radius:3px;animation:scrolldot 1.6s infinite}
-@keyframes scrolldot{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}80%{opacity:0;transform:translate(-50%,12px)}}
-
 /* ============ MARQUEE STRIP ============ */
 .strip{background:var(--bordo);color:#fff;overflow:hidden;padding:18px 0}
 .marquee{display:flex;gap:48px;white-space:nowrap;width:max-content;animation:marq 28s linear infinite}
@@ -452,7 +447,6 @@ footer{background:var(--ink);color:rgba(255,255,255,.66);padding:72px 0 30px}
       <div><b>100%</b><small>comunidad y constancia</small></div>
     </div>
   </div>
-  <div class="scroll-hint"><span class="mouse"></span>Scroll</div>
 </section>
 
 <!-- ============ STRIP ============ -->
